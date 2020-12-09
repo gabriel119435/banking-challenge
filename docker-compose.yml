@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  app-ser:
+    container_name: app-cont
+    build: .
+    image: app-imag
+    ports:
+      - "8080:8080"
+    depends_on:
+      - psql-ser
+  psql-ser:
+    container_name: psql-cont
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "user"
+      POSTGRES_PASSWORD: "pass"
+      POSTGRES_DB: "db"
+    volumes:
+      - ./sql/schema.sql:/docker-entrypoint-initdb.d/1-schema.sql
+      - ./sql/data.sql:/docker-entrypoint-initdb.d/2-data.sql

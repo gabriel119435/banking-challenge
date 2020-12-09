@@ -1,0 +1,6 @@
+spring:
+  # with no database credentials, spring will connect to h2
+  jpa:
+    # let `schema.sql` create table, not hibernate
+    # https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#howto-initialize-a-database-using-spring-jdbc
+    hibernate.ddl-auto: none

@@ -1,0 +1,293 @@
+_type: export
+__export_format: 4
+__export_date: 2020-12-09T22:07:54.648Z
+__export_source: insomnia.desktop.app:v2020.5.2
+resources:
+  - _id: req_cc0d161ae53c4c938ba4b30a051f5a72
+    parentId: wrk_678c3cff0a264bb9a8eb495380c87cbe
+    modified: 1607544534421
+    created: 1607544488597
+    url: localhost:8080/people
+    name: people findAll
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication:
+      type: basic
+      useISO88591: false
+      disabled: false
+      username: user
+      password: pass
+    metaSortKey: -1607544529714
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_678c3cff0a264bb9a8eb495380c87cbe
+    parentId: null
+    modified: 1607151305452
+    created: 1607151305452
+    name: Insomnia
+    description: ""
+    scope: null
+    _type: workspace
+  - _id: req_6d04ea5637584d51a894955c62007b89
+    parentId: wrk_678c3cff0a264bb9a8eb495380c87cbe
+    modified: 1607544552580
+    created: 1607544529664
+    url: localhost:8080/people/73478504872
+    name: people findByCpf
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication:
+      type: basic
+      useISO88591: false
+      disabled: false
+      username: user
+      password: pass
+    metaSortKey: -1607544529664
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_14187d8f530b4131b4d54db6d44ad248
+    parentId: wrk_678c3cff0a264bb9a8eb495380c87cbe
+    modified: 1607547949009
+    created: 1607544575262
+    url: localhost:8080/people
+    name: people save
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "c",
+        	"cpf": "74138265007"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_2b6c9775d00d4fac8127639dc0921d7d
+    authentication:
+      type: basic
+      useISO88591: false
+      disabled: false
+      username: user
+      password: pass
+    metaSortKey: -1607544529614
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f37a51dbead04329bf69b1d0179c2d28
+    parentId: wrk_678c3cff0a264bb9a8eb495380c87cbe
+    modified: 1607544683287
+    created: 1607544656005
+    url: localhost:8080/people/74138265007
+    name: people delete
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication:
+      type: basic
+      useISO88591: false
+      disabled: false
+      username: user
+      password: pass
+    metaSortKey: -1607544529564
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_685e49c1ea01464eb956b2e06a76befb
+    parentId: wrk_678c3cff0a264bb9a8eb495380c87cbe
+    modified: 1607544840509
+    created: 1607544714459
+    url: localhost:8080/transaction
+    name: transaction save deposit
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"destination": 1,
+        	"amount": 10
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_1220deca48644542876488abd5d73fb1
+    authentication:
+      type: basic
+      useISO88591: false
+      disabled: false
+      username: user
+      password: pass
+    metaSortKey: -1607544529514
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b6d2adc36fed4c8cb6febcfcf20297de
+    parentId: wrk_678c3cff0a264bb9a8eb495380c87cbe
+    modified: 1607549243934
+    created: 1607544850856
+    url: localhost:8080/transaction
+    name: transaction save withdraw
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"origin": 1,
+        	"amount": 5
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_1220deca48644542876488abd5d73fb1
+    authentication:
+      type: basic
+      useISO88591: false
+      disabled: false
+      username: user
+      password: pass
+    metaSortKey: -1607544529489
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_22cd9de1aba7441c85d9b480bb1e0351
+    parentId: wrk_678c3cff0a264bb9a8eb495380c87cbe
+    modified: 1607551433473
+    created: 1607544809810
+    url: localhost:8080/transaction
+    name: transaction save transfer
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"origin": 1,
+        	"destination": 2,
+        	"amount": 25
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_1220deca48644542876488abd5d73fb1
+    authentication:
+      type: basic
+      useISO88591: false
+      disabled: false
+      username: user
+      password: pass
+    metaSortKey: -1607544529464
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_cd6833c194864667b28177e8eddcdfc6
+    parentId: wrk_678c3cff0a264bb9a8eb495380c87cbe
+    modified: 1607549203864
+    created: 1607548087961
+    url: localhost:8080/history/1?days=50
+    name: history findById
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication:
+      type: basic
+      useISO88591: false
+      disabled: false
+      username: user
+      password: pass
+    metaSortKey: -1607544529364
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_4b053d0558e6ad4f4fc57b8f83a673632e805194
+    parentId: wrk_678c3cff0a264bb9a8eb495380c87cbe
+    modified: 1607151305482
+    created: 1607151305482
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1607151305482
+    _type: environment
+  - _id: jar_4b053d0558e6ad4f4fc57b8f83a673632e805194
+    parentId: wrk_678c3cff0a264bb9a8eb495380c87cbe
+    modified: 1607551436825
+    created: 1607151305484
+    name: Default Jar
+    cookies:
+      - key: JSESSIONID
+        value: 3BB400C4C9EB2284724617BF2B105D98
+        domain: localhost
+        path: /
+        httpOnly: true
+        hostOnly: true
+        creation: 2020-12-09T19:48:07.218Z
+        lastAccessed: 2020-12-09T22:03:56.825Z
+        id: "7197811005932444"
+    _type: cookie_jar
+  - _id: spc_f3457d7fdd404b0a8acfe16f1bcb8489
+    parentId: wrk_678c3cff0a264bb9a8eb495380c87cbe
+    modified: 1607151305453
+    created: 1607151305453
+    fileName: Insomnia
+    contents: ""
+    contentType: yaml
+    _type: api_spec
