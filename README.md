@@ -20,7 +20,7 @@
 
 To manually run some API calls, please click on this button:
 
-[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=banking%20requests&uri=insomnia_requests.yml)
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=banking%20requests&uri=https://github.com/gabriel119435/banking-challenge/blob/main/insomnia_requests.yml)
 
 ### features
 ##### basic auth on all apis
